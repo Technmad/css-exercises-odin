@@ -31,15 +31,41 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  max-width: 300px;
+  margin: 15px;
+  padding: 10px;
 }
 
 .container {
   display: flex;
-  align-items: stretch;
+  flex: 1;
+}
+
+.cardbox {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+li {
+  margin-bottom: 15px;
 }
